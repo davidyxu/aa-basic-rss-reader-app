@@ -1,0 +1,9 @@
+<div class="sidebar" style="float: left; margin-right: 20px;"></div>
+<div class="main-view" style="float: left;"></div>
+
+<script>
+	var feedsData = <%=Feed.all.to_json.html_safe%>;
+	var entriesData = <%=Entry.all.to_json.html_safe%>;
+
+	window.NR.initialize($('.sidebar'), $('.main-view'), feedsData, entriesData);
+</script>

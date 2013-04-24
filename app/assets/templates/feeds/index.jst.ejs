@@ -1,0 +1,14 @@
+<ul>
+<% feeds.each(function(feed) { %>
+	<li>
+		<a href="/#/feeds/<%= feed.attributes.id %>">
+			<%= feed.attributes.title %>
+		</a>
+	</li>
+ <% }); %>
+</ul>
+
+<a href="/#/feeds/new">
+	Add New Feed
+</a>
+

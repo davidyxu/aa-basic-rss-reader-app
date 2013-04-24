@@ -1,0 +1,20 @@
+<button class="refresh">Refresh</button>
+
+<ul>
+	<% _(entries.models).each(function(entry) { %>
+		<li>
+			<a href="<%=entry.attributes.link%>">
+				<%= entry.attributes.title %>
+			</a>
+			<br>
+			<a href="<%=entry.attributes.comments%>">
+				Comments
+			</a> 
+			||
+			<a href="/#/entries/<%=entry.attributes.id%>">
+				Details
+			</a>
+		</li>
+		<br>
+	<%});%>
+</ul>

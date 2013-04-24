@@ -1,0 +1,9 @@
+<ul>
+
+<% console.log(keys) %>
+	<% _(keys).each(function(key) { %>
+		<li>
+			<%= key %>: <%= entry.attributes[key] %>
+		</li>
+	<% }); %>
+</ul>
